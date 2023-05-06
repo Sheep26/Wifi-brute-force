@@ -9,17 +9,7 @@ from pywifi import const
 from pywifi import Profile
 
 client_ssid = input("Wifi name: ")
-print("1: xato 5 million passwords from 2021")
-print("2: openwall.net 3.7 million passwords from 2020")
-try:
-    pwd_list = int(input("Password list: "))
-except:
-    print("must be number")
-    time.sleep(2)
-if pwd_list == 1:
-    path_to_file = "passwords/pwd-list.txt"
-elif pwd_list == 2:
-    path_to_file = "passwords/openwall.net-all.txt"
+path_to_file = "passwords/pwd-list.txt"
 
 RED   = "\033[1;31m"  
 BLUE  = "\033[1;34m"
